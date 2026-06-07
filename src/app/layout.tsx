@@ -22,10 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={site.language} suppressHydrationWarning>
-      <body className="min-h-screen bg-stone-50 font-serif text-stone-900 antialiased transition-colors dark:bg-stone-950 dark:text-stone-100">
+      <body className="min-h-screen bg-stone-50 font-sans text-stone-900 antialiased transition-colors dark:bg-neutral-950 dark:text-stone-100">
         <div className="flex min-h-screen flex-col">
           <SiteHeader site={site} />
-          <main className="flex-1 py-10">
+          <main className="flex-1 py-8 sm:py-12">
             <Container>{children}</Container>
           </main>
           <SiteFooter site={site} />

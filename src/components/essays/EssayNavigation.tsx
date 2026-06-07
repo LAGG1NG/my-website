@@ -12,19 +12,19 @@ export function EssayNavigation({ previous, next }: EssayNavigationProps) {
   }
 
   return (
-    <nav className="mt-12 grid gap-4 border-t border-stone-200 pt-8 dark:border-stone-800 sm:grid-cols-2" aria-label="上一篇和下一篇文章">
+    <nav className="mt-12 grid gap-6 border-t border-stone-200 pt-8 dark:border-stone-800 sm:grid-cols-2" aria-label="上一篇和下一篇文章">
       {previous ? (
-        <Link href={`/essays/${previous.slug}`} className="rounded-2xl border border-blue-100 bg-white p-5 transition hover:border-blue-200 hover:shadow-sm dark:border-blue-950/60 dark:bg-stone-900 dark:hover:border-blue-800">
+        <Link href={`/essays/${previous.slug}`} className="group block">
           <span className="text-sm text-stone-500 dark:text-stone-400">上一篇</span>
-          <span className="mt-2 block font-semibold text-stone-950 dark:text-white">{previous.title}</span>
+          <span className="mt-2 block font-medium text-stone-950 transition-colors group-hover:text-stone-600 dark:text-stone-50 dark:group-hover:text-stone-300">{previous.title}</span>
         </Link>
       ) : (
         <div />
       )}
       {next ? (
-        <Link href={`/essays/${next.slug}`} className="rounded-2xl border border-blue-100 bg-white p-5 text-right transition hover:border-blue-200 hover:shadow-sm dark:border-blue-950/60 dark:bg-stone-900 dark:hover:border-blue-800">
+        <Link href={`/essays/${next.slug}`} className="group block text-right">
           <span className="text-sm text-stone-500 dark:text-stone-400">下一篇</span>
-          <span className="mt-2 block font-semibold text-stone-950 dark:text-white">{next.title}</span>
+          <span className="mt-2 block font-medium text-stone-950 transition-colors group-hover:text-stone-600 dark:text-stone-50 dark:group-hover:text-stone-300">{next.title}</span>
         </Link>
       ) : null}
     </nav>

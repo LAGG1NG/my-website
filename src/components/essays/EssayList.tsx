@@ -14,7 +14,7 @@ export function EssayList({ essays, emptyTitle = "暂无文章", emptyDescriptio
   }
 
   return (
-    <div className="space-y-4">
+    <div className="divide-y divide-stone-200 dark:divide-stone-800">
       {essays.map((essay) => (
         <EssayCard key={essay.slug} essay={essay} />
       ))}

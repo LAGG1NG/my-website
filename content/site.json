@@ -1,15 +1,15 @@
 {
-  "siteName": "XX的博客",
-  "titleTemplate": "%s | XX的博客",
-  "description": "一个传统博客风格的个人网站，记录技术笔记、项目复盘和日常思考。",
+  "siteName": "一页笔记",
+  "titleTemplate": "%s | 一页笔记",
+  "description": "这里记录我在 Web 开发、工具使用和日常思考中的一些笔记。"
   "language": "zh-CN",
   "startYear": 2024,
   "author": {
-    "name": "我的名字",
-    "displayName": "张三",
-    "initial": "张",
-    "role": "全栈开发者",
-    "bio": "全栈开发者，热爱技术与写作。关注 Web 开发、工程效率和持续写作，喜欢把项目经验整理成可复用的笔记。",
+    "name": "站点作者",
+    "displayName": "站点作者",
+    "initial": "记",
+    "role": "Web 开发者 / 写作者",
+    "bio": "我关注 Web 开发、工程效率和写作。这里主要放一些技术笔记、项目复盘和日常思考。"
     "location": "中国"
   },
   "nav": [
@@ -19,8 +19,6 @@
     { "label": "关于", "href": "/about" }
   ],
   "social": [
-    { "label": "微博", "href": "#", "type": "weibo" },
-    { "label": "GitHub", "href": "#", "type": "github" },
     { "label": "邮箱", "href": "mailto:hello@example.com", "type": "email" }
   ]
 }

@@ -12,9 +12,5 @@ export function ProjectStatusBadge({ status }: { status?: Project["status"] }) {
     return null;
   }
 
-  return (
-    <span className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600 dark:bg-stone-800 dark:text-stone-300">
-      {statusLabel[status]}
-    </span>
-  );
+  return <span className="text-sm text-stone-500 dark:text-stone-400">{statusLabel[status]}</span>;
 }

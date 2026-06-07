@@ -30,10 +30,11 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="rounded-full border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-700 transition hover:border-stone-500 hover:text-stone-950 dark:border-stone-700 dark:text-stone-200 dark:hover:border-stone-400 dark:hover:text-white"
+      className="text-sm font-medium text-stone-500 underline-offset-4 transition-colors hover:text-stone-950 hover:underline dark:text-stone-400 dark:hover:text-stone-100"
       aria-label="切换明暗主题"
     >
-      {isDark ? "亮色" : "暗色"}
+      <span aria-hidden="true">{isDark ? "☀" : "☾"}</span>
+      <span>{isDark ? "亮色" : "暗色"}</span>
     </button>
   );
 }

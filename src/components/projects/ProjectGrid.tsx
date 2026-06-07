@@ -13,7 +13,7 @@ export function ProjectGrid({ projects, emptyDescription }: ProjectGridProps) {
   }
 
   return (
-    <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+    <div className="divide-y divide-stone-200 dark:divide-stone-800">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

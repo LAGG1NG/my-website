@@ -9,8 +9,8 @@ type TagProps = {
 
 export function Tag({ children, href, active = false, count }: TagProps) {
   const className = active
-    ? "rounded-full bg-blue-600 px-3 py-1 text-sm font-medium text-white dark:bg-blue-500"
-    : "rounded-full bg-blue-50 px-3 py-1 text-sm text-blue-700 transition hover:bg-blue-100 dark:bg-blue-950/60 dark:text-blue-200 dark:hover:bg-blue-900";
+    ? "rounded-md bg-stone-900 px-2 py-0.5 text-sm font-medium text-stone-50 dark:bg-stone-100 dark:text-stone-950"
+    : "rounded-md border border-stone-200 px-2 py-0.5 text-sm text-stone-500 transition-colors hover:border-stone-400 hover:text-stone-900 dark:border-stone-800 dark:text-stone-400 dark:hover:border-stone-600 dark:hover:text-stone-100";
   const label = count === undefined ? children : `${children} ${count}`;
 
   if (href) {

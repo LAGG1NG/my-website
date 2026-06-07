@@ -3,20 +3,19 @@ import { EssayTagFilter } from "@/components/essays/EssayTagFilter";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getAllEssays, getEssayTagStats } from "@/lib/content";
 
-export default function EssaysPage({ searchParams }: { searchParams?: { tag?: string } }) {
-  const selectedTag = searchParams?.tag;
+export default function EssaysPage() {
   const tags = getEssayTagStats();
-  const essays = getAllEssays().filter((essay) => !selectedTag || essay.tags.includes(selectedTag));
+  const essays = getAllEssays();
 
   return (
     <section className="space-y-8">
       <PageHeader
         eyebrow="Essays"
         title="文章列表"
-        description={selectedTag ? `正在阅读标签「${selectedTag}」下的 ${essays.length} 篇随笔。` : "按标签筛选随笔，阅读技术笔记、项目复盘和日常思考。"}
+        description="按时间倒序阅读技术笔记、项目复盘和日常思考。你也可以通过标签进入专题归档。"
       />
-      <EssayTagFilter tags={tags} selectedTag={selectedTag} />
-      <EssayList essays={essays} emptyDescription="没有找到匹配当前筛选条件的文章。" />
+      <EssayTagFilter tags={tags} />
+      <EssayList essays={essays} emptyDescription="在 content/essays 中添加 MDX 文件后，这里会显示文章列表。" />
     </section>
   );
 }

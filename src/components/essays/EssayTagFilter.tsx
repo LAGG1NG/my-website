@@ -8,18 +8,18 @@ type EssayTagFilterProps = {
 
 function pillClass(active: boolean) {
   return active
-    ? "rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white dark:bg-blue-500"
-    : "rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 transition hover:bg-blue-100 dark:bg-blue-950/60 dark:text-blue-200 dark:hover:bg-blue-900";
+    ? "rounded-md bg-stone-900 px-3 py-1.5 text-sm font-medium text-stone-50 dark:bg-stone-100 dark:text-stone-950"
+    : "rounded-md border border-stone-200 px-3 py-1.5 text-sm text-stone-500 transition-colors hover:border-stone-400 hover:text-stone-950 dark:border-stone-800 dark:text-stone-400 dark:hover:border-stone-600 dark:hover:text-stone-100";
 }
 
 export function EssayTagFilter({ tags, selectedTag }: EssayTagFilterProps) {
   return (
-    <div className="flex flex-wrap gap-2 rounded-2xl border border-blue-100 bg-white p-4 shadow-sm dark:border-blue-950/60 dark:bg-stone-900">
+    <div className="flex flex-wrap gap-2 border-y border-stone-200 py-4 dark:border-stone-800">
       <Link href="/essays" className={pillClass(!selectedTag)}>
         全部
       </Link>
       {tags.map(({ tag, count }) => (
-        <Link key={tag} href={`/essays?tag=${encodeURIComponent(tag)}`} className={pillClass(selectedTag === tag)}>
+        <Link key={tag} href={`/tags/${encodeURIComponent(tag)}`} className={pillClass(selectedTag === tag)}>
           {tag} {count}
         </Link>
       ))}

@@ -36,7 +36,7 @@ const markdownComponents: Components = {
     }
 
     return (
-      <code className="rounded bg-blue-50 px-1.5 py-0.5 text-sm text-blue-900 dark:bg-blue-950/70 dark:text-blue-100" {...props}>
+      <code className="rounded bg-stone-200/70 px-1.5 py-0.5 text-sm text-stone-900 dark:bg-stone-800 dark:text-stone-100" {...props}>
         {children}
       </code>
     );
@@ -48,7 +48,7 @@ const markdownComponents: Components = {
  */
 export function MarkdownContent({ content }: { content: string }) {
   return (
-    <article className="prose prose-stone max-w-none leading-8 dark:prose-invert prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 dark:prose-a:text-blue-300 prose-pre:bg-transparent prose-pre:p-0">
+    <article className="prose prose-stone max-w-none leading-8 dark:prose-invert prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-stone-800 prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-stone-950 dark:prose-a:text-stone-200 dark:hover:prose-a:text-white prose-blockquote:border-stone-300 prose-blockquote:text-stone-600 dark:prose-blockquote:border-stone-700 dark:prose-blockquote:text-stone-300 prose-pre:bg-transparent prose-pre:p-0">
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
         {content}
       </ReactMarkdown>

@@ -8,8 +8,8 @@
     "tags": ["博客", "作品集", "Web"],
     "stack": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
     "coverImage": "",
-    "demoUrl": "#",
-    "githubUrl": "#",
+    "demoUrl": "",
+    "githubUrl": "",
     "featured": true,
     "status": "active"
   },
@@ -22,8 +22,8 @@
     "tags": ["写作", "知识管理"],
     "stack": ["Markdown", "内容组织"],
     "coverImage": "",
-    "demoUrl": "#",
-    "githubUrl": "#",
+    "demoUrl": "",
+    "githubUrl": "",
     "featured": true,
     "status": "experiment"
   }

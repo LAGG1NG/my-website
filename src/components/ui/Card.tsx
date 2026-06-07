@@ -25,12 +25,12 @@ export function Card<T extends ElementType = "div">({
 }: CardProps<T>) {
   const Component = as ?? "div";
   const interactiveClass = interactive
-    ? "transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md dark:hover:border-blue-800"
-    : "shadow-sm";
+    ? "transition-colors hover:border-stone-400 dark:hover:border-stone-600"
+    : "";
 
   return (
     <Component
-      className={`rounded-2xl border border-blue-100 bg-white ${paddingClass[padding]} ${interactiveClass} dark:border-blue-950/60 dark:bg-stone-900 ${className}`}
+      className={`rounded-xl border border-stone-200 bg-stone-50/60 ${paddingClass[padding]} ${interactiveClass} dark:border-stone-800 dark:bg-neutral-950 ${className}`}
       {...props}
     >
       {children}
