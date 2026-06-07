@@ -1,0 +1,30 @@
+[
+  {
+    "id": "personal-blog",
+    "name": "个人博客网站",
+    "subtitle": "一个内容驱动的传统个人博客",
+    "description": "基于 Next.js、TypeScript 和 Tailwind CSS 构建的个人博客，用来展示随笔、项目和自我介绍。",
+    "longDescription": "这个项目强调长期维护和内容沉淀：随笔使用 MDX 文件维护，项目使用 JSON 配置维护，站点信息集中在 site.json 中。它适合作为个人写作、作品集和项目复盘的统一入口。",
+    "tags": ["博客", "作品集", "Web"],
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+    "coverImage": "",
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": true,
+    "status": "active"
+  },
+  {
+    "id": "writing-system",
+    "name": "写作与知识管理系统",
+    "subtitle": "整理想法、文章和项目复盘的内容系统",
+    "description": "一个用于沉淀技术笔记、项目经验和日常思考的写作系统示例。",
+    "longDescription": "这个项目关注如何把零散的项目经验组织成可检索、可复用、可持续积累的内容。它可以继续扩展标签归档、RSS、站内搜索等传统博客能力。",
+    "tags": ["写作", "知识管理"],
+    "stack": ["Markdown", "内容组织"],
+    "coverImage": "",
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": true,
+    "status": "experiment"
+  }
+]
